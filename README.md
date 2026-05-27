@@ -180,7 +180,7 @@ To ensure the model has captured the underlying biological distribution, the sam
 
 | PCA Comparison (Natural vs. Sampled) | Sampled PCA with Predicted Labels |
 |--------------------------------------|-----------------------------------|
-| ![PCA Comparison](plots/gen_smp_pc1_vs_pc2) | ![Sampled PCA Labels](plots/gen_2-Components_PCA_Projection_of_sampled_sequences) |
+| ![PCA Comparison](plots/gen_smp_pc1_vs_pc2.png) | ![Sampled PCA Labels](plots/gen_2-Components_PCA_Projection_of_sampled_sequences.png) |
 
 ### Topology and Clustering of Generated Sequences
 
@@ -188,7 +188,7 @@ A t-SNE analysis shows how natural (`nat`), artificial (`art`), and sampled (`sm
 
 | t-SNE with Cluster & Origin Labels | Elbow & Silhouette Analysis |
 |------------------------------------|----------------------------|
-| ![t-SNE Clusters](plots/gen_t-SNE_2_components_with_cluster_labels) | ![Sampled Elbow](plots/gen_smp_clustering_kmedoids_score_elbow.png) |
+| ![t-SNE Clusters](plots/gen_t-SNE_2_components_with_cluster_labels.png) | ![Sampled Elbow](plots/gen_smp_clustering_kmedoids_score_elbow.png) |
 
 ## Requirements
 
