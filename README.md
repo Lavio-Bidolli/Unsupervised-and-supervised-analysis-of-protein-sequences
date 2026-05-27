@@ -57,7 +57,7 @@ becomes a binary vector of length 20 (one dimension per canonical amino acid), p
 sparse but information-preserving matrix representation.
 
 <!-- INSERT: amino acid frequency distribution plot or sequence length histogram -->
-<!-- Example: ![Sequence length distribution](your_length_hist.png) -->
+<!-- Example: ![Sequence length distribution](plots/your_length_hist.png) -->
 
 ---
 
@@ -71,23 +71,23 @@ of components before clustering.
 
 | First PCs | Full spectrum | Cumulative |
 |-----------|--------------|------------|
-| ![PCA explained variance](pca_explained_variance.jpg) | ![Full explained variance](pca_full_explained_variance.jpg) | ![Cumulative explained variance](pca_full_cumulative_explained_variance.jpg) |
+| ![PCA explained variance](plots/pca_explained_variance.jpg) | ![Full explained variance](plots/pca_full_explained_variance.jpg) | ![Cumulative explained variance](plots/pca_full_cumulative_explained_variance.jpg) |
 
 ### PC projections (2D)
 
 | PC1 vs PC2 | PC2 vs PC3 | PC3 vs PC4 |
 |-----------|-----------|-----------|
-| ![PC1 vs PC2](pc1_vs_pc2.png) | ![PC2 vs PC3](pc2_vs_pc3.png) | ![PC3 vs PC4](pc3_vs_pc4.png) |
+| ![PC1 vs PC2](plots/pc1_vs_pc2.png) | ![PC2 vs PC3](plots/pc2_vs_pc3.png) | ![PC3 vs PC4](plots/pc3_vs_pc4.png) |
 
 | PC3 vs PC7 | PC3 vs PC8 |
 |-----------|-----------|
-| ![PC3 vs PC7](pc3_vs_pc7.png) | ![PC3 vs PC8](pc3_vs_pc8.png) |
+| ![PC3 vs PC7](plots/pc3_vs_pc7.png) | ![PC3 vs PC8](plots/pc3_vs_pc8.png) |
 
 ### PC loadings
 
 | PC1 – PC2 loadings | PC3 – PC8 loadings |
 |--------------------|--------------------|
-| ![Loadings PC1–PC2](loadings_pc1_pc2.png) | ![Loadings PC3–PC8](loadings_pc3_pc8.png) |
+| ![Loadings PC1–PC2](plots/loadings_pc1_pc2.png) | ![Loadings PC3–PC8](plots/loadings_pc3_pc8.png) |
 
 > An interactive 3-D PCA plot is available at [`pca_3d_interactive.html`](pca_3d_interactive.html).
 
@@ -103,11 +103,11 @@ dissimilarities).
 
 | OHE space | PCA (50 PCs) | All PCs |
 |-----------|-------------|---------|
-| ![Elbow curve](elbow_curve.png) | ![Elbow 50 PCs](elbow_curve_50pc.png) | ![Elbow full PCs](elbow_curve_full_pc.png) |
+| ![Elbow curve](plots/elbow_curve.png) | ![Elbow 50 PCs](plots/elbow_curve_50pc.png) | ![Elbow full PCs](plots/elbow_curve_full_pc.png) |
 
 | Elbow (test set, OHE) | Elbow (test set, combined) |
 |-----------------------|---------------------------|
-| ![Elbow kmedoids test](clustering_test_kmedoids_score_elbow.png) | ![Elbow kmedoids combined test](clustering_test_kmedoids_combined_score_elbow.png) |
+| ![Elbow kmedoids test](plots/clustering_test_kmedoids_score_elbow.png) | ![Elbow kmedoids combined test](plots/clustering_test_kmedoids_combined_score_elbow.png) |
 
 ### Clustering results — PCA & t-SNE projections
 
@@ -115,24 +115,24 @@ dissimilarities).
 
 | PCA | t-SNE | Contingency |
 |-----|-------|-------------|
-| ![Clustering PCA](clustering_kmedoids_pca.png) | ![Clustering t-SNE](clustering_kmedoids_tsne.png) | ![Contingency](clustering_kmedoids_contingency.png) |
+| ![Clustering PCA](plots/clustering_kmedoids_pca.png) | ![Clustering t-SNE](plots/clustering_kmedoids_tsne.png) | ![Contingency](plots/clustering_kmedoids_contingency.png) |
 
 #### Test-set exploration (first PCs)
 
 | PCA | t-SNE | Contingency |
 |-----|-------|-------------|
-| ![Test PCA](clustering_test_firstpcs.png) | ![Test t-SNE](clustering_test_tsne_firstpcs.png) | ![Test contingency first PCs](clustering_test_contingency_firstpcs.png) |
+| ![Test PCA](plots/clustering_test_firstpcs.png) | ![Test t-SNE](plots/clustering_test_tsne_firstpcs.png) | ![Test contingency first PCs](plots/clustering_test_contingency_firstpcs.png) |
 
 | Full test PCA | Full test t-SNE | Full test contingency |
 |---------------|----------------|----------------------|
-| ![Test full PCA](clustering_test.png) | ![Test full t-SNE](clustering_test_tsne.png) | ![Test contingency](clustering_test_contingency.png) |
+| ![Test full PCA](plots/clustering_test.png) | ![Test full t-SNE](plots/clustering_test_tsne.png) | ![Test contingency](plots/clustering_test_contingency.png) |
 
 #### Combined features — k = 10 and k = 28
 
 | k | PCA | t-SNE | Contingency |
 |---|-----|-------|-------------|
-| 10 | ![Combined PCA k10](clustering_kmedoids_combined_pca_10.png) | ![Combined t-SNE k10](clustering_kmedoids_combined_tsne_10.png) | ![Combined contingency k10](clustering_kmedoids_combined_contingency_10.png) |
-| 28 | ![Combined PCA k28](clustering_kmedoids_combined_pca_28.png) | ![Combined t-SNE k28](clustering_kmedoids_combined_tsne_28.png) | ![Combined contingency k28](clustering_kmedoids_combined_contingency_28.png) |
+| 10 | ![Combined PCA k10](plots/clustering_kmedoids_combined_pca_10.png) | ![Combined t-SNE k10](plots/clustering_kmedoids_combined_tsne_10.png) | ![Combined contingency k10](plots/clustering_kmedoids_combined_contingency_10.png) |
+| 28 | ![Combined PCA k28](plots/clustering_kmedoids_combined_pca_28.png) | ![Combined t-SNE k28](plots/clustering_kmedoids_combined_tsne_28.png) | ![Combined contingency k28](plots/clustering_kmedoids_combined_contingency_28.png) |
 
 ---
 
@@ -147,16 +147,16 @@ features).
 
 | Training set | Test set |
 |-------------|---------|
-| ![Confusion matrix – training](confusion_matrix_training_set.png) | ![Confusion matrix – test](confusion_matrix_test.png) |
+| ![Confusion matrix – training](plots/confusion_matrix_training_set.png) | ![Confusion matrix – test](plots/confusion_matrix_test.png) |
 
 ### Feature importance
 
 | Impurity-based | Permutation-based |
 |---------------|------------------|
-| ![Feature importance](top_predictive_features_random_forest.png) | ![Permutation importance](top_predictive_features_random_forest_premutations.png) |
+| ![Feature importance](plots/top_predictive_features_random_forest.png) | ![Permutation importance](plots/top_predictive_features_random_forest_premutations.png) |
 
 <!-- INSERT: learning curve or ROC/AUC curve if generated -->
-<!-- Example: ![ROC curve](roc_curve.png) -->
+<!-- Example: ![ROC curve](plots/roc_curve.png) -->
 
 ---
 
@@ -169,7 +169,7 @@ matrix, producing sequences that are statistically plausible but do not appear v
 in the original dataset.
 
 <!-- INSERT: comparison plot between real and generated amino-acid frequency distributions -->
-<!-- Example: ![Generated vs real AA frequencies](generated_vs_real_freq.png) -->
+<!-- Example: ![Generated vs real AA frequencies](plots/generated_vs_real_freq.png) -->
 
 ---
 
